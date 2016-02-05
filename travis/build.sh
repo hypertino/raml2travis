@@ -1,5 +1,7 @@
 #! /bin/bash
 set -e
+sudo apt-get update && sudo apt-get install oracle-java8-installer
+java -version
 
 cd raml-java-parser-2
 cp -rf ../pom-deploy.xml pom-deploy.xml

@@ -2,7 +2,11 @@ language: java
 jdk:
 - oraclejdk8
 script: "$TRAVIS_BUILD_DIR/travis/build.sh"
-sudo: required # need to update java, see https://github.com/travis-ci/travis-ci/issues/3259
+sudo: false
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
 env:
   global:
   - secure: LBlzo2lyIjMjZ9wK8xQeU0irWYygD8vqEMg3/nbQHiczhkfL+56TDvQf+y5GcHBXcPNEHAIhNpAEO1zjiMVDN3t9U7kwxV3ZxYso5BkOyhEIBQJIYCk8XjTKgxR5GG4HJrvR17meO9PAvVhCaRjS2pO4+EKmp8qpBQvzGCvhmsI9vzDOwuzJlz5GAmg44Of5It+0YCMhC43OvWandW/xYwCUDVccqC7Z5shNUFZxQ2VLaPpP+LhJeKd2jy1BIVBEYkbG3LVDJU0lPyGNMTWgIDzZ9vOxXZtT3vMo+61WN5wOTw9RfQmgWdc9JIvjMP6+KL4ZC0CCnSGs89Qp5h6JyFurJro22sYKxlK298nGs7XrwaxDkMt6v0s5ENM1f8cE4DCqT2rHOQgVUnOXDoI1UiLDrF1yrOi/ajNtCPL2e5YfGi2OwHN5ernNH5URg3cjKwfAEBYIeq1RtwaC7pNYH1wUonCG4rprcDFe5efdkqgLwi9Ndg/OhlLI1fhZdwXnDoRhquAyejK3qRq04eGnOL+xPwGzj4Ga5Sqs3P2hZpTsUBq2FQBSmylMukY8nr421jel0c6c+U4sDagcgMSv2x6BoM90l063+4ThtR3MV3Cacw7zfTk+9+nxL+9bX8Ch+MxmQH+GsymjJsvhxykdOZXr74YZ55kTsun+mlbSvWw=

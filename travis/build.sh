@@ -7,6 +7,8 @@ cp -rrf ../settings-deploy.xml settings-deploy.xml
 
 openssl aes-256-cbc -k "$key_password" -in ../travis/inn-oss-public.enc -out ./inn-oss-public.asc -d
 openssl aes-256-cbc -k "$key_password" -in ../travis/inn-oss-private.enc -out ./inn-oss-private.asc -d
+gpg --dearmor ./inn-oss-public.asc
+gpg --dearmor ./inn-oss-private.asc
 ls -al
 
 if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then

@@ -15,8 +15,8 @@
      <properties>
        <!--gpg.executable>gpg2</gpg.executable-->
        <gpg.passphrase>${env.oss_gpg_passphrase}</gpg.passphrase>
-       <gpg.publicKeyring>inn-oss-public.asc</gpg.publicKeyring>
-       <gpg.secretKeyring>inn-oss-private.asc</gpg.secretKeyring>
+       <gpg.publicKeyring>./inn-oss-public.asc</gpg.publicKeyring>
+       <gpg.secretKeyring>./inn-oss-private.asc</gpg.secretKeyring>
        <gpg.keyname>5DF2525FA9D102B7</gpg.keyname>
      </properties>
    </profile>

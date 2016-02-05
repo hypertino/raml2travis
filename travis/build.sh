@@ -3,7 +3,7 @@ set -e
 
 cd raml-java-parser-2
 ln -s ../pom-deploy.xml pom-deploy.xml
-ln -s ../settings.xml settings.xml
+ln -s ../settings-deploy.xml settings-deploy.xml
 
 if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
 

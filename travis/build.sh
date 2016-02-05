@@ -10,7 +10,8 @@ openssl aes-256-cbc -k "$key_password" -in ../travis/inn-oss-private.enc -out ./
 ls -al
 
 if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
-  mvn -f pom-deploy.xml --settings settings-deloy.xml install
+    mvn versions:set -DnewVersion=0.0.$TRAVIS_BUILD_NUMBER
+    mvn -f pom-deploy.xml --settings settings-deloy.xml install
 else
-  mvn -f pom-deploy.xml --settings settings-deloy.xml install
+    mvn -f pom-deploy.xml --settings settings-deloy.xml install
 fi

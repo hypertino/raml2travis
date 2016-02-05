@@ -11,7 +11,7 @@ ls -al
 
 if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
     mvn versions:set -DnewVersion=0.0.$TRAVIS_BUILD_NUMBER
-    mvn -f pom-deploy.xml --settings settings-deploy.xml install
+    mvn -f pom-deploy.xml --settings settings-deploy.xml clean install -DskipTests=true
 else
-    mvn -f pom-deploy.xml --settings settings-deploy.xml install
+    mvn -f pom-deploy.xml --settings settings-deploy.xml clean install -DskipTests=true
 fi

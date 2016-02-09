@@ -17,7 +17,6 @@ ls -al ./javascript-module-holders/
 
 if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
     mvn versions:set -DnewVersion=0.0.$TRAVIS_BUILD_NUMBER
-    mvn versions:commit
     mvn clean install -DskipTests=true --settings=./settings-deploy.xml
     mvn deploy -DskipTests=true --settings=./settings-deploy.xml
 else

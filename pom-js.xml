@@ -6,8 +6,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<artifactId>javascript-module-holders</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-
+    
   	<dependencies>
 		<dependency>
 			<groupId>commons-httpclient</groupId>

@@ -62,7 +62,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>java-raml1-tools</groupId>
+            <groupId>eu.inn</groupId>
             <artifactId>javascript-module-holders</artifactId>
             <version>${project.version}</version>
         </dependency>

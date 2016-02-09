@@ -2,10 +2,9 @@
 set -e
 
 cd raml-java-parser-2
-cp -rf ../pom-parent.xml pom.xml
+cp -rf ../pom-parent.xml ./pom.xml
 cp -rf ../pom-parser.xml ./java-raml1-parser/pom.xml
 cp -rf ../pom-js.xml ./javascript-module-holders/pom.xml
-cp -rf ../pom-parent.xml pom.xml
 cp -rrf ../settings-deploy.xml settings.xml
 
 openssl aes-256-cbc -k "$key_password" -in ../travis/inn-oss-public.enc -out ./inn-oss-public.asc -d
@@ -18,6 +17,7 @@ ls -al ./javascript-module-holders/
 
 if [[ "$TRAVIS_PULL_REQUEST" == "false" && "$TRAVIS_BRANCH" == "master" ]]; then
     mvn versions:set -DnewVersion=0.0.$TRAVIS_BUILD_NUMBER
+    mvn versions:commit
     mvn clean deploy -DskipTests=true
 else
     mvn clean install

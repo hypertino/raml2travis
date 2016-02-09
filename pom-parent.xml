@@ -16,6 +16,24 @@
         </license>
     </licenses>
 
+    <organization>
+      <name>SIREn Solutions</name>
+      <url>http://siren.solutions</url>
+    </organization>
+
+    <developers>
+      <developer>
+        <id>RAML</id>
+        <name>RAML</name>
+        <url>http://raml.org</url>
+      </developer>
+    </developers>
+
+    <scm>
+      <url>https://github.com/raml-org/raml-java-parser-2</url>
+      <connection>https://github.com/raml-org/raml-java-parser-2.git</connection>
+    </scm>
+
     <modules>
         <module>javascript-module-holders</module>
         <module>java-raml1-parser</module>

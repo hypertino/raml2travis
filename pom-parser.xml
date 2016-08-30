@@ -51,7 +51,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.raml</groupId>
+            <groupId>eu.inn</groupId>
             <artifactId>yagi</artifactId>
             <version>${project.version}</version>
         </dependency>

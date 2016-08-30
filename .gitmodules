@@ -1,3 +1,3 @@
-[submodule "raml-java-parser-2"]
-	path = raml-java-parser-2
-	url = https://github.com/InnovaCo/raml-java-parser-2.git
+[submodule "raml-java-parser"]
+	path = raml-java-parser
+	url = git@github.com:InnovaCo/raml-java-parser.git

@@ -9,6 +9,7 @@ cp -rf ../settings-deploy.xml ./settings-deploy.xml
 
 echo "$key_password" | gpg --passphrase-fd 0 ../travis/ht-oss-public.asc.gpg
 echo "$key_password" | gpg --passphrase-fd 0 ../travis/ht-oss-private.asc.gpg
+cp ../travis/ht-oss-*.asc ./
 gpg --dearmor ./ht-oss-public.asc
 gpg --dearmor ./ht-oss-private.asc
 ls -al

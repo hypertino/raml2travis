@@ -6,4 +6,4 @@ RAML parser have custom HTTP verbs supported targeting hyper-facade.
 
 [![Build Status](https://travis-ci.org/hypertino/raml2travis.svg?branch=master)](https://travis-ci.org/hypertino/raml2travis)
 
-[ Latest Releases ](https://oss.sonatype.org/#nexus-search;gav~com.hypertino~service-config_*~~~)
+[ Latest Releases ](https://oss.sonatype.org/#nexus-search;gav~com.hypertino~raml-parser-2*~~~)

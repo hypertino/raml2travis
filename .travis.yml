@@ -7,10 +7,6 @@ addons:
   apt:
     packages:
     - oracle-java8-installer
-cache:
-  directories:
-  - $HOME/.m2
-  - $HOME/.ivy2
 env:
   global:
   - secure: v4i0D9LG/SvoSg73sKzve6D/odLjWUpEuoGIE5I8TNHbv0UxKlxfydZWmjik6P03GLQT4WGlSffXZMnVT9f5DYTtRMl89P2aZLcXDvwEf/Jvbij+cbBLEaop9LfU7QG22zwo9r0KDcTALE8WTFPeTuGuyqL8r1x2hEK0wpbMUqQtIc0B4WIoEJlmU2/acHzLVfDHaGp3CHLQQRGz/sjMIRRasVyJPIVu7CgJi7mNwlbC4SsNZbdsMnV3iBLeWWEgnG4+EiyIYse2aa+PJJdDD17h3VOqn1kf6YNXaQUtQYTl6ybM4ZGEWJD+b8U7uZtY+jAA3oi8PO3xxmttaGrH6MJfu0BkAs234581f967gIAtP0JkONt4nxshNbDKHZFa8EPkShn2okOFaTXOU8wEPPTWD1NWVAnKXuz9aRzEBTFqGD7MZ8Kj++A683f6IN3N0Y9m+RHrVIAp6r8ViRpVsklpAocus7iTAZWp2vSMbdm7UDr19cHcuHAk63WV2C5EUCPM6ylqq5wBYalCD0ffOYnmJBFNOecE9jv6nFSmCkzjLTLeju01ZImLdn8j8Vo5gfqjov2oySPd4Uay9RRmYXRfQOtqK2fSMNqESydffm+dj25K2+IZRtCUpgA0uGZtv7/c5QjJYel38FwMBfgmYg2i1mdc1Q8gZRCOxpu7eLE=

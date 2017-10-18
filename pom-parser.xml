@@ -52,7 +52,7 @@
     <dependencies>
 
         <dependency>
-            <groupId>org.raml</groupId>
+            <groupId>com.hypertino</groupId>
             <artifactId>yagi</artifactId>
             <version>${project.version}</version>
         </dependency>
